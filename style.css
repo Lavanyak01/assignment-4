@@ -1,0 +1,178 @@
+.for-smallscreen{
+    display:none;
+}
+.house-details{
+    padding:0 8%;
+    font-family: sans-serif;
+}
+.title h1{
+   font-weight:normal;   
+}
+a{
+    color:black;
+}
+.room-images{
+    display:grid;
+    grid-gap:1px 6px;;
+    grid-template-columns: repeat(4,1fr);
+    padding:20px;
+}
+.room-images img{
+    width:100%; 
+    border-radius: 10px; 
+}
+.image1{
+    grid-column:span 2;
+    grid-row:span 2;
+}
+.image5{
+    position:relative;
+}
+.image5 a{
+    border:1px solid black;
+    width:9rem;
+    background-color: white;
+    text-align:center;
+    padding:8px;
+    font-size:16px;
+    border-radius: 5px;
+    position:absolute;
+    right:10%;
+    top:60%;
+    text-decoration: none;
+}
+
+.bookings{
+    width:40%;
+    float:right;
+    position:sticky;
+    top:35%;
+    
+}
+.check-in{
+    width:60%;
+    height:225px;
+    border:1px solid black;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:5px 5px 5px grey; 
+    margin-left: 25%; 
+}
+table{
+   width:75%;
+   border-radius:5px;
+   margin:10% auto;
+}
+.check-in button{
+    font-size:18px;
+    background:red;
+    border:0;
+    border-radius:10px;
+    color:white;
+    width:80%;
+    margin-left: 10%;
+    padding:5%;
+    
+}
+.availability input{
+    border:0;
+    width:50%;
+}
+.availability label{
+    display: block;
+    font-size: 10px;
+}
+.report{
+    margin-left: 40%;
+    padding:20px;
+}
+
+.room-details{
+    width:65%;   
+}
+.room-details li{
+    list-style: none;
+    font-size:20px;
+    margin-bottom:20px;
+    margin-left:15px;
+}
+.room-details li span{
+    display:block;
+    font-size:15px;
+    margin-left:20px;
+}
+.room-details li i{
+    position:relative;
+    right:15px;   
+}
+.offering-list1{
+    float:left;
+}
+.offering-list2{
+    float:right;
+}
+.place-offers:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.aminities{
+    border:1px solid black;
+    border-radius:10px;
+    width:200px;
+    height:35px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom:30px;
+}
+.aminities a{
+    text-decoration: none;
+}
+.aminities a:hover{
+    text-decoration: underline;
+}
+.footer{
+    width:100%;
+    background-color: white;
+    border-top:0.5px solid grey;
+    display:none;
+    position:fixed;
+    bottom:0px;
+}
+.footer button{
+    margin-top: 15px;
+    font-size: 18px;
+    padding:1%;
+    border-radius: 5px;
+    background-color: red;
+    color:white;
+    border:none;
+    margin-right:10%;
+}
+.footer p{
+    margin:0;
+}
+
+
+@media screen and (max-width:768px){
+    .bookings{
+        display: none;
+    }
+    .footer{
+        display:block;
+    }
+    .room-images{
+        display:none;
+    }
+    .for-smallscreen{
+        display:block;
+    }
+    .offering-list2{
+        float:left;
+    }
+    .room-details{
+        width:100%;
+    }
+}
+
