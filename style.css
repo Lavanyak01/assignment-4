@@ -18,8 +18,7 @@ a{
     padding:20px;
 }
 .room-images img{
-    width:100%; 
-    border-radius: 10px; 
+    width:100%;
 }
 .image1 > img{
      border-top-left-radius: 10px;
