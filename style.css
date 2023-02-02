@@ -17,16 +17,18 @@ a{
     grid-template-columns: repeat(4,1fr);
     padding:20px;
 }
-.room-images img{
-    width:100%; 
-    border-radius: 10px; 
-}
 .image1{
     grid-column:span 2;
     grid-row:span 2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
+.image3{
+    border-top-right-radius: 10px;
+} 
 .image5{
     position:relative;
+    border-bottom-right-radius: 10px;
 }
 .image5 a{
     border:1px solid black;
